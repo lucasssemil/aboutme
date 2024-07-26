@@ -1,0 +1,11 @@
+.content {
+  @apply max-h-screen !bg-green-400;
+}
+
+.side-content {
+  @apply !bg-red-200 !w-[50vw];
+}
+
+.div-topBar {
+  @apply flex flex-row h-[4rem] sm:h-[6rem] max-w-max  overflow-hidden items-center justify-between static px-5;
+}

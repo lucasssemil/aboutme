@@ -3,7 +3,7 @@
 }
 
 .side-content {
-  @apply bg-red-200 !w-[50vw] self-center overflow-y-scroll b g;
+  @apply bg-red-200 !w-[50vw] self-center overflow-y-scroll;
 }
 .side-inside {
   @apply m-3 rounded-sm h-[10vh] self-center;

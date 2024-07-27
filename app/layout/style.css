@@ -10,5 +10,9 @@
 }
 
 .div-topBar {
-  @apply flex flex-row h-[4rem] sm:h-[6rem];
+  @apply flex flex-row h-[4rem] sm:h-[6rem] mb-2;
+}
+
+.top-item {
+  @apply hover:border-b-4 hover:border-blue-600 hover:transition;
 }

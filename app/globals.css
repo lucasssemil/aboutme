@@ -17,7 +17,7 @@
 }
 
 body {
-  @apply flex flex-col overflow-auto bg-black text-white font-bahnschrift;
+  @apply flex flex-col overflow-auto bg-gradient-to-t from-gray-700 via-gray-800 to-gray-900 text-white font-bahnschrift h-[100vh];
 }
 
 @layer utilities {

@@ -9,7 +9,7 @@ import {
 
 export default function Home() {
   return (
-    <div className="page bg-red-800">
+    <div className="page bg-gradient-to-r from-red-500 via-red-600 to-red-700">
       <CardCustom content={CardAboutMe1.content} color={CardAboutMe1.color} />
       <a href="mailto:lucasssemil@gmail.com">
         <CardCustom content={CardAboutMe2.content} color={CardAboutMe2.color} />
@@ -23,7 +23,6 @@ export default function Home() {
       >
         <CardCustom content={CardAboutMe5.content} color={CardAboutMe5.color} />
       </a>
-      <section></section>
     </div>
   );
 }

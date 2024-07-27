@@ -13,6 +13,10 @@ export default function RootLayout({
       <body>
         <TopBar />
         <Content children={children} />
+        <footer className="text-white text-sm bottom-0 fixed self-center">
+          {" "}
+          @Lucas.Emil2024
+        </footer>
       </body>
     </html>
   );

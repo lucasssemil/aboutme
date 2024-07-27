@@ -11,13 +11,13 @@ export const TopBar: React.FC = () => {
   return (
     <div className="sm:w-screen">
       <div className="div-topBar ">
-        <button className="px-5" onClick={() => navigateTo("")}>
+        <button className="px-5 top-item" onClick={() => navigateTo("")}>
           About Me
         </button>
-        <button className="px-5" onClick={() => navigateTo("tech")}>
+        <button className="px-5 top-item" onClick={() => navigateTo("tech")}>
           Tech
         </button>
-        <button className="px-5" onClick={() => navigateTo("like")}>
+        <button className="px-5 top-item" onClick={() => navigateTo("like")}>
           Likes
         </button>
       </div>

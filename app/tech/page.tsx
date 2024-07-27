@@ -16,7 +16,7 @@ export default function Tech() {
   const moveStash1 = useCartStore((state: CartStore) => state.moveStash1);
   const moveStash2 = useCartStore((state: CartStore) => state.moveStash2);
   return (
-    <div className="page sm:!flex-row !justify-between !bg-blue-800 bg-gray">
+    <div className="page sm:!flex-row !justify-between bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 bg-gray">
       <div className="flex-col flex gap-2">
         <CardCustom content={CardPorto1.content} color={CardPorto1.color} />
         <CardCustom content={CardPorto2.content} color={CardPorto2.color} />

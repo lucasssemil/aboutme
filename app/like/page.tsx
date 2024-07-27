@@ -1,9 +1,12 @@
+import { CardCustom } from "../component/Card";
+import { CardLike1, CardLike2, CardLike3 } from "../utils/static";
+
 export default function Like() {
   return (
-    <div className="p-4 w-[50vw] !bg-green-200">
-      {/* <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex"> */}
-      LIKES
-      {/* </div> */}
+    <div className="page !bg-green-800 bg- ">
+      <CardCustom content={CardLike1.content} color={CardLike1.color} />
+      <CardCustom content={CardLike2.content} color={CardLike2.color} />
+      <CardCustom content={CardLike3.content} color={CardLike3.color} />
     </div>
   );
 }

@@ -17,15 +17,19 @@
 }
 
 body {
-  @apply flex flex-row overflow-hidden;
+  @apply flex flex-col overflow-auto bg-black text-white font-bahnschrift;
 }
 
 @layer utilities {
   .text-balance {
-    /* text-wrap: balance; */
+    text-wrap: balance;
   }
 }
 
-.container {
-  @apply flex flex-col h-[100vh] space-x-4 w-[50vw] bg-gray-200 p-4;
+.page {
+  @apply p-4 flex-col gap-2 flex-1 flex justify-center;
+}
+
+a {
+  @apply hover:brightness-75 transition;
 }

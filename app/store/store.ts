@@ -1,23 +1,27 @@
 import { create } from "zustand";
 
 export type CartStore = {
-  count: number;
-  items: string[];
-  addItem: (item: string) => void;
-  removeItem: (item: string) => void;
+  stash1: string[];
+  stash2: string[];
+  moveStash1: (item: string) => void;
+  moveStash2: (item: string) => void;
 };
 
 export const useCartStore = create<CartStore>((set) => ({
-  count: 0,
-  items: [],
-  addItem: (item: string) =>
-    set((state: CartStore) => ({
-      items: [...state.items, item],
-      count: state.count++,
-    })),
-  removeItem: (item: string) =>
-    set((state: CartStore) => ({
-      items: state.items.filter((i) => i !== item),
-      count: state.count--,
-    })),
+  stash1: ["Apple", "Orange", "Pear", "Melon"],
+  stash2: [],
+  moveStash1: (item: string) => {
+    if (item !== "")
+      set((state: CartStore) => ({
+        stash1: [...state.stash1, item],
+        stash2: state.stash2.filter((i) => i !== item),
+      }));
+  },
+  moveStash2: (item: string) => {
+    if (item !== "")
+      set((state: CartStore) => ({
+        stash2: [...state.stash2, item],
+        stash1: state.stash1.filter((i) => i !== item),
+      }));
+  },
 }));
